@@ -4,7 +4,7 @@ export default function LandingPage() {
     return (
         <>
             <Head title="Welcome" />
-            <div className="landing-page-container"></div>
+            <div className="globals-container"></div>
         </>
     );
 }
