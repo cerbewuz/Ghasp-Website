@@ -35,6 +35,11 @@
   width: 70px;
   height: 70px;
 }
+@media (max-width: 768px) {
+  .topbar-container .topbar-container-inside .menu-container {
+    display: none;
+  }
+}
 .topbar-container .topbar-container-inside .menu-container .menu-container-inside {
   display: flex;
   align-items: center;
