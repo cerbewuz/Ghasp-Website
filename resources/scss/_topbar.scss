@@ -24,6 +24,9 @@
             }
         }
         .menu-container {
+            @include response-to(tablet) {
+                display: none;
+            }
             .menu-container-inside {
                 display: flex;
                 align-items: center;
