@@ -25,4 +25,20 @@
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.topbar-container .topbar-container-inside .menu-container .menu-container-inside {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topbar-container .topbar-container-inside .menu-container .menu-container-inside .menu-container-inside-item {
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.5s;
+}
+.topbar-container .topbar-container-inside .menu-container .menu-container-inside .menu-container-inside-item:hover {
+  scale: 1.1;
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

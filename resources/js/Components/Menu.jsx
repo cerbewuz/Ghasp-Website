@@ -2,7 +2,7 @@ export default function Menu({ items }) {
     return (
         <>
             <div className="menu-container">
-                <div className="menu-coontainer-inside">
+                <div className="menu-container-inside">
                     {items.map((item, index) => (
                         <span
                             key={index}
