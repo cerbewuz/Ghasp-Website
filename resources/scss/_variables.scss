@@ -1,22 +1,33 @@
+$breakpoint-mobile-s: 320px;
+$breakpoint-mobile-m: 375px;
+$breakpoint-mobile-l: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1440px;
+
 @mixin response-to($breakpoint) {
-    @if $breakpoint == "xs" {
-        @media (max-width: 575.98px) {
+    @if $breakpoint == mobile-s {
+        @media (max-width: $breakpoint-mobile-s) {
             @content;
         }
-    } @else if $breakpoint == "sm" {
-        @media (min-width: 576px) and (max-width: 767.98px) {
+    } @else if $breakpoint == mobile-m {
+        @media (max-width: #{$breakpoint-mobile-m}) {
             @content;
         }
-    } @else if $breakpoint == "md" {
-        @media (min-width: 768px) and (max-width: 991.98px) {
+    } @else if $breakpoint == mobile-l {
+        @media (max-width: #{$breakpoint-mobile-l}) {
             @content;
         }
-    } @else if $breakpoint == "lg" {
-        @media (min-width: 992px) and (max-width: 1199.98px) {
+    } @else if $breakpoint == tablet {
+        @media (max-width: #{$breakpoint-tablet}) {
             @content;
         }
-    } @else if $breakpoint == "xl" {
-        @media (min-width: 1200px) {
+    } @else if $breakpoint == laptop {
+        @media (max-width: #{$breakpoint-laptop}) {
+            @content;
+        }
+    } @else if $breakpoint == desktop {
+        @media (max-width: #{$breakpoint-desktop}) {
             @content;
         }
     }
