@@ -4,12 +4,9 @@ export default function MenuRight({ items }) {
             <div className="menu-container">
                 <div className="menu-container-inside">
                     {items.map((item, index) => (
-                        <span
-                            key={index}
-                            className="menu-container-inside-item"
-                        >
-                            {item}
-                        </span>
+                        <div key={index} className="menu-container-inside-item">
+                            <span>{item}</span>
+                        </div>
                     ))}
                 </div>
             </div>
