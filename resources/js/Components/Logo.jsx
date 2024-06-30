@@ -12,6 +12,6 @@ export default function Logo() {
                     <img src={LogoImage} className="logo-item" alt="Logo" />
                 </div>
             </div>
-        </> 
+        </>
     );
 }
