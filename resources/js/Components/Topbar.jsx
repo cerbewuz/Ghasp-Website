@@ -1,12 +1,13 @@
 import Logo from "@/Components/Logo";
-import Menu from "@/Components/Menu";
+import MenuRight from "@/Components/MenuRight";
 export default function Topbar() {
     return (
         <>
             <div className="topbar-container">
                 <div className="topbar-container-inside">
                     <Logo />
-                    <Menu
+                    
+                    <MenuRight
                         items={[
                             "Home",
                             "Gallery",

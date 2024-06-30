@@ -1,4 +1,4 @@
-export default function Menu({ items }) {
+export default function MenuRight({ items }) {
     return (
         <>
             <div className="menu-container">

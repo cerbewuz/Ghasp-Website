@@ -27,6 +27,14 @@
   align-items: center;
   justify-content: space-between;
 }
+.topbar-container .topbar-container-inside .logo-container .logo-container-inside {
+  display: flex;
+  align-items: center;
+}
+.topbar-container .topbar-container-inside .logo-container .logo-container-inside .logo-item {
+  width: 50px;
+  height: 50px;
+}
 .topbar-container .topbar-container-inside .menu-container .menu-container-inside {
   display: flex;
   align-items: center;
