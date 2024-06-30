@@ -7,7 +7,11 @@ export default function LandingPage() {
     return (
         <>
             <Head title="Welcome" />
-            <div className="globals-container"></div>
+            <div className="globals-container">
+                <Topbar />
+     
+
+            </div>
         </>
     );
 }
