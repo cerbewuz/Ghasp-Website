@@ -10,17 +10,17 @@ export default function MenuRight({ items }) {
         <>
             <div className="menu-container">
                 <div className="menu-container-inside">
-                    <div
-                        className="search-container"
-                        onClick={setInputSearch(!inputSearch)}
-                    >
+                    <div className="search-container">
                         <input
                             type="text"
                             className={`input-item-search ${
                                 inputSearch ? "display-option" : ""
                             }`}
                         />
-                        <div className="icon-container">
+                        <div
+                            className="icon-container"
+                            onClick={() => setInputSearch(!inputSearch)}
+                        >
                             <SearchRoundedIcon />
                         </div>
                     </div>
