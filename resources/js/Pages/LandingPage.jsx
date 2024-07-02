@@ -10,7 +10,7 @@ export default function LandingPage() {
             <div className="globals-container">
                 <div className="landing-page-container">
                     <Topbar />
-                </div> 
+                </div>
             </div>
         </>
     );
