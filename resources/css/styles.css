@@ -8,11 +8,14 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: rgba(252, 226, 178, 0.5764705882);
 }
 
 .globals-container {
   height: 100vh;
-  min-height: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(252, 226, 178, 0.5764705882);
 }
 
 .topbar-container {
@@ -22,6 +25,7 @@ body {
   right: 0;
   z-index: 1000;
   height: 70px;
+  background-color: white;
 }
 .topbar-container .topbar-container-inside {
   padding: 10px 15px;
@@ -160,6 +164,11 @@ body {
   height: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  .landing-page-container .landing-page-container-item .landing-page-container-item-inside {
+    flex-direction: column;
+  }
+}
 .landing-page-container .landing-page-container-item .landing-page-container-item-inside .item-left {
   width: 50%;
   height: 100%;
@@ -170,19 +179,39 @@ body {
   font-family: "Figtree";
   animation: fadeInLeft 1s ease-out;
 }
+@media (max-width: 768px) {
+  .landing-page-container .landing-page-container-item .landing-page-container-item-inside .item-left {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .landing-page-container .landing-page-container-item .landing-page-container-item-inside .item-left .item-left-title {
-  font-size: 55px;
+  font-size: 3.4375rem;
   font-weight: 700;
   padding-bottom: 20px;
   border-bottom: 1px solid rgb(228, 228, 228);
   color: #000;
 }
 .landing-page-container .landing-page-container-item .landing-page-container-item-inside .item-left .item-left-para {
-  font-size: 25px;
+  font-size: 1.5625rem;
   color: #000;
 }
 .landing-page-container .landing-page-container-item .landing-page-container-item-inside .item-right {
   width: 50%;
   height: 100%;
   animation: fadeInRight 1s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .landing-page-container .landing-page-container-item .landing-page-container-item-inside .item-right {
+    width: 100%;
+  }
+}
+.landing-page-container .landing-page-container-item .landing-page-container-item-inside .item-right .item-right-image .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=styles.css.map */
