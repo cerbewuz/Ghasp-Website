@@ -45,13 +45,47 @@
   align-items: center;
   gap: 10px;
 }
+.topbar-container .topbar-container-inside .menu-container .menu-container-inside .search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+.topbar-container .topbar-container-inside .menu-container .menu-container-inside .search-container .input-item-search {
+  display: none;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 20px;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding: 7px 10px;
+  height: 40px;
+  width: 270px;
+  padding-right: 40px;
+}
+.topbar-container .topbar-container-inside .menu-container .menu-container-inside .search-container .input-item-search.display-option {
+  display: block;
+}
+.topbar-container .topbar-container-inside .menu-container .menu-container-inside .search-container .input-item-search:focus {
+  outline: 1px solid rgb(204, 204, 230);
+}
+.topbar-container .topbar-container-inside .menu-container .menu-container-inside .search-container .icon-container {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin-right: 10px;
+}
 .topbar-container .topbar-container-inside .menu-container .menu-container-inside .menu-container-inside-item {
   cursor: pointer;
   padding: 5px;
-  font-size: 0.8125rem;
+  font-size: 16px;
   transition: ease-in 0.3s;
   position: relative;
   overflow: hidden;
+  font-weight: bold;
 }
 .topbar-container .topbar-container-inside .menu-container .menu-container-inside .menu-container-inside-item span {
   position: relative;
@@ -77,9 +111,7 @@
 }
 
 .landing-page-container {
-  background-image: url("/public/image/ghasplogo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
+  background-color: #ffda95;
 }/*# sourceMappingURL=styles.css.map */
