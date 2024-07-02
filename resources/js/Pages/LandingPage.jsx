@@ -29,16 +29,10 @@ export default function LandingPage() {
                                 onMouseLeave={() => setIsHovered(false)}
                                 style={{
                                     position: "relative",
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
                                 }}
                             >
-                                <video
-                                    src={VideoItem}
-                                    autoPlay
-                                    loop
-                                    muted
+                                <div
+                                    className="item-right-video"
                                     style={{
                                         position: "absolute", // Add this line
                                         top: 0, // Add this line
@@ -51,13 +45,21 @@ export default function LandingPage() {
                                             "opacity 0.5s, visibility 0.5s",
                                         width: "100%", // Set the width
                                     }}
-                                />
-                                <img
-                                    src={PhotoItem}
+                                >
+                                    <video
+                                        src={VideoItem}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        style={{ width: "100%" }}
+                                    />
+                                </div>
+                                <div
+                                    className="item-right-image"
                                     style={{
                                         position: "absolute", // Add this line
                                         top: 0, // Add this line
-                                        left: 0,
+
                                         opacity: isHovered ? 0 : 1,
                                         visibility: isHovered
                                             ? "hidden"
@@ -65,7 +67,9 @@ export default function LandingPage() {
                                         transition:
                                             "opacity 0.5s, visibility 0.5s",
                                     }}
-                                />
+                                >
+                                    <img src={PhotoItem} className="img" />
+                                </div>
                             </div>
                         </div>
                     </div>
