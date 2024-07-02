@@ -1,5 +1,6 @@
 import { router } from "@inertiajs/react";
 import { useState, useRef, useEffect } from "react";
+
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 export default function MenuRight({ items }) {
     const [inputSearch, setInputSearch] = useState(false);
