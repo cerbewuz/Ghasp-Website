@@ -142,6 +142,8 @@ body {
 }
 .landing-page-container {
   width: 100%;
+  max-width: 1700px;
+  margin: auto;
   height: 100%;
   background-color: rgba(252, 226, 178, 0.5764705882);
   display: flex;

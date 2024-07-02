@@ -41,7 +41,7 @@ export default function LandingPage() {
                                     muted
                                     style={{
                                         position: "absolute", // Add this line
-                                        top: "20%", // Add this line
+                                        top: 0, // Add this line
                                         left: 0,
                                         opacity: isHovered ? 1 : 0,
                                         visibility: isHovered
