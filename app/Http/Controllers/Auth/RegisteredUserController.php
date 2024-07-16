@@ -24,6 +24,14 @@ class RegisteredUserController extends Controller
     }
 
     /**
+     * Display the email registration view.
+     */
+    public function withEmailGet()
+    {
+        return Inertia::render('Auth/WithEmail');
+    }
+
+    /**
      * Handle an incoming registration request.
      *
      * @throws \Illuminate\Validation\ValidationException
@@ -32,7 +40,7 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|lowercase|email|max:255|unique:'.User::class,
+            'email' => 'required|string|lowercase|email|max:255|unique:' . User::class,
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
