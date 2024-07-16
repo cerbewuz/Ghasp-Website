@@ -1,0 +1,204 @@
+.main-guest {
+    height: 100%;
+    background: rgb(238, 238, 238);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-guest__card {
+        width: 470px;
+
+        border-radius: 10px;
+        background-color: white;
+        .main-guest__card-flex {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            padding: 40px;
+            width: 100%;
+            height: 100%;
+            .main-guest__card-head {
+                margin-bottom: 30px;
+            }
+            .main-guest__card-body {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .card-body__item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    gap: 10px;
+                    &.top {
+                        margin-bottom: 20px;
+                    }
+
+                    .card-body-item__input {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        gap: 5px;
+                        &.input-flex {
+                            display: flex;
+                            flex-direction: row;
+
+                            .input-flex__item {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                        .label-item {
+                            font-size: 0.9375rem;
+                        }
+                        .input-item {
+                            padding: 10px;
+                            border-radius: 7px;
+                            border: 1px solid gray;
+                            &.input-password {
+                                padding-right: 38px;
+                            }
+                        }
+                        .password__icon {
+                            position: absolute;
+                            right: 10px;
+                            top: 32px;
+                        }
+                    }
+                    .card-body-item__button {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .card-body-item__button-item {
+                            width: 100%;
+                            padding: 15px 10px;
+                            font-size: 14px;
+                            text-decoration: none;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 7px;
+                            border: 1px solid;
+                            color: White;
+                            background-color: black;
+                            transition: background-color 0.2s ease-in;
+                            cursor: pointer;
+                            &.signup-to {
+                                background-color: rgb(231, 231, 231);
+                                color: rgb(51, 51, 51);
+                                border-color: rgb(231, 231, 231);
+                                &:hover {
+                                    background-color: rgb(214, 214, 214);
+                                }
+                                .signup-to__item {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    svg {
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                background-color: rgb(31, 31, 31);
+                            }
+                        }
+                    }
+                    .card-body-item__divide {
+                        width: 80%;
+                        margin: 20px 0 0 0;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-self: center;
+
+                        &::before {
+                            left: 0;
+                            content: "";
+                            background: rgb(231, 231, 231);
+                            height: 1px;
+                            position: absolute;
+                            width: 45%;
+                        }
+
+                        &::after {
+                            right: 0;
+                            content: "";
+                            background: rgb(231, 231, 231);
+                            height: 1px;
+                            position: absolute;
+                            width: 45%;
+                        }
+                    }
+                    .card-body-item__medias {
+                        display: flex;
+                        justify-content: center;
+                        gap: 20px;
+                        .medias-icon__item {
+                            display: flex;
+                            justify-content: center;
+                            border-radius: 7px;
+                            align-items: center;
+                            background-color: rgb(232, 232, 232);
+                            height: 50px;
+                            width: 120px;
+                            cursor: pointer;
+                            transition: background-color 0.2s ease-in;
+                            svg {
+                                transition: height 0.2s ease-in;
+                            }
+                            &:hover {
+                                background-color: rgb(224, 224, 224);
+                                svg {
+                                    height: 25px; // Adjust this value as needed
+                                }
+                            }
+                        }
+                    }
+                    .card-body-item__redirects {
+                        margin-top: 25px;
+                        display: flex;
+                        font-size: 13.5px;
+                        gap: 5px;
+                        .redirect-link {
+                            color: #005bd3;
+                            font-weight: 500;
+                            cursor: pointer;
+                        }
+                        &.sign-up-redirects {
+                            margin-top: 0;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+            .main-guest__card-footer {
+                margin-top: 30px;
+                font-size: 12px;
+                color: gray;
+                font-weight: 400;
+                .card-footer__remind {
+                    margin-bottom: 10px;
+                }
+                .card-footer__links {
+                    display: flex;
+                    gap: 10px;
+
+                    .card-footer__link {
+                        cursor: pointer;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
